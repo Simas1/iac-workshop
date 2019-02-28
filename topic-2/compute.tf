@@ -10,7 +10,7 @@ locals {
 # Fetching and filtering amazon AMI
 data "aws_ami" "ami" {
   most_recent = true
-  owners = ["amazon"]
+  # owners = ["amazon"]
 
   filter {
     name   = "owner-alias"
